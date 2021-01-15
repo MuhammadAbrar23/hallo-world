@@ -26,7 +26,7 @@ jobs:
         uses: action/setup-node@v2-beta
         with:
            node-verstion: 14
-           -name: install surge
+       -name: install surge
         run: npm-install--g surge
-        -name: run surge
+       -name: run surge
          run: surge ./ abrar.surge.sh --token${{secret.abcd}}
