@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-verstion:  14 
-      - name : installing surge
-        run: npm-installing--g surge
+      - name: installing surge
+        run: npm-installing--global surge
       - name: run surge
         run: surge ./scrawny-queen.surge.sh--token${{secrets.abcd}}
